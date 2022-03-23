@@ -21,9 +21,9 @@ RSpec.describe User, type: :model do
   end
 
   it 'is valid if password is set and password_confirmation is nil' do
-     user = User.new
-     user.password = 'foo'
-     expect(user.valid?).to be(true)
+    user = User.new
+    user.password = 'foo'
+    expect(user.valid?).to be(true)
   end
 
   it "is invalid if password and password_confirmation are both non-nil and don't match" do
